@@ -86,16 +86,17 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 <img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=steam &color=00adee&logo=Steam&logoColor=FFFFFF&label=" height = 80/>
 </a>
 <a href="" target="_blank">
-<img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=Play Store &color=056559&logo=Steam&logoColor=FFFFFF&label=" height = 80/>
+<img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=Play Store &color=056559&logo=android&logoColor=FFFFFF&label=" height = 80/>
 </a>
 
+------
 
 <div align=center>
 <a href="" target="_blank">
 <img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For linux &color=E95420&logo=Linux&logoColor=FFFFFF&label=" />
 </a>
 <a href="" target="_blank">
-<img alt="Windows" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For Windows&color=00B4ED&logo=windows&logoColor=FFFFFF&label=" />
+<img alt="Windows" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For Windows&color=00B4ED&logo=Microsoft&logoColor=FFFFFF&label=" />
 </a>
 <a href="" target="_blank">
 <img alt="Whatsapp" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For Android &color=A4C639&logo=Android&logoColor=FFFFFF&label=" />
