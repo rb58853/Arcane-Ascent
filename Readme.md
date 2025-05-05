@@ -89,7 +89,6 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 <img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=Play Store &color=056559&logo=Steam&logoColor=FFFFFF&label=" height = 80/>
 </a>
 
-------
 
 <div align=center>
 <a href="" target="_blank">
