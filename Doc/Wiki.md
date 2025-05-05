@@ -1,6 +1,6 @@
 # Wiki
 
-Documentacion de codigo del proyecto Arcane.
+Arcane es un videojuego desarrollado en el motor grafico **Unity** con lengueje de programacion principal **C#**. Este documento recoge la documentacion necesaria para extender el proyecto en si, tanto a nivel de codigo como a nivel de editor. El codigo esta debidamente documentado para lograr un flujo de trabajo comodo mientras se esta desarrollando. Por otro lado la estructura, detalles del editor, y especificidades del codigo del proyecto seran presentadas y explicadas en este documento.
 
 # Entidades
 
@@ -79,7 +79,7 @@ El concepto `prioridad` se usa para establecer el orden de ejecuciones.
 
 ### OnDamage Priority
 
-Esta prioridad se usa para establecer el orden en que se activan las acciones [`IOnDamage`](Doc/Actions/IOnDamage.md). Por ejemplo, cuando una entidad es `Intagible`, esta reduce el danno a cero, pero nosotros queremos devolver el danno con un efecto `Reflexion`, es entonces prioritario entrar primero a reflexion antes de reducir el danno a cero.
+Esta prioridad se usa para establecer el orden en que se activan las acciones [`IOnDamage`](./ComponentsDoc/Interfaces/IOnDamage.md). Por ejemplo, cuando una entidad es `Intagible`, esta reduce el danno a cero, pero nosotros queremos devolver el danno con un efecto `Reflexion`, es entonces prioritario entrar primero a reflexion antes de reducir el danno a cero.
 
 ```c#
 //En este ejemplo podriamos tener algo como
@@ -93,7 +93,7 @@ De esta forma primero se ejecutara `Reflexion` y luego `Intangible` dado que `Re
 
 Para el sistema de guardado se utiliza la biblioteca `Newtonsoft.Json`. Esta biblioteca guarda datos en forma de `JSON`, que funciona correctamente para `ScriptableObject` o para `MonoBehaviour`. Es importante tener en cuenta que para cargar en un ScriptableObject solo se puede usar la funcion `Newtonsoft.Json.FromJsonOverwrite(json, myObject)`. Para mas informacion de esta biblioteca consulta la [documentacion oficial de unity](https://docs.unity3d.com/Packages/com.unity.nuget.newtonsoft-json@3.0/manual/index.html).
 
-Para un mas informacion de sistema de guardados consultar la documentacion de todo el [Sistema de Guardado](Doc/SaveLoad/SavedSistem.md) que se sigue en el proyecto.
+Para un mas informacion de sistema de guardados consultar la documentacion de todo el [Sistema de Guardado](./ComponentsDoc/SaveSystem/SavedSistem.md) que se sigue en el proyecto.
 
 <!-- # Control de Prefabs
 https://docs.unity3d.com/Manual/AssetBundles-Native.html -->

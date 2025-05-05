@@ -1,17 +1,17 @@
 # Sistema de Guardado
+
 Para el sistema de guardado del proyecto se ha deicido utilizar la biblioteca [Newtonsoft.Json](https://docs.unity3d.com/Packages/com.unity.nuget.newtonsoft-json@3.0/manual/index.html) por su flexibilidad superior a otras bibliotecas comunmente utilizadas como [JsonUtility](https://docs.unity3d.com/2020.1/Documentation/Manual/JSONSerialization.html).
 
-Para entender como fuciona el sistema de guardar datos en Arcane se deben explicar detalles importantes de la biblioteca [Newtonsoft.Json](https://docs.unity3d.com/Packages/com.unity.nuget.newtonsoft-json@3.0/manual/index.html) que se usa como base para todo nuestro sistema de guardado y de datos persistentes. 
+Para entender como fuciona el sistema de guardar datos en Arcane se deben explicar detalles importantes de la biblioteca [Newtonsoft.Json](https://docs.unity3d.com/Packages/com.unity.nuget.newtonsoft-json@3.0/manual/index.html) que se usa como base para todo nuestro sistema de guardado y de datos persistentes.
 
+## Newtonsoft.Json
 
-
-## Newtonsoft.Json 
-Newtonsoft’s Json.NET is a popular high-performance JSON framework for .NET that can be used with Unity; similar to Unity’s Json Utility 
+Newtonsoft’s Json.NET is a popular high-performance JSON framework for .NET that can be used with Unity; similar to Unity’s Json Utility
 but with other features. Caracteristicas, de las cuales, cada una de las utilizadas, se documentan en esta seccion.
 
 - `Newtonsoft.Json` serializa campos de las clases que sean publicos o propiedades que tengan `get` o `set` publicos. Las propiedades pueden ser solo lectura o solo escritura, solamente con una de estas opciones publicas, por defecto se serializa la propiedad. Es importante tener esto en cuenta ya que, generalmente, las propiedades de solo lectura no se desean serializar.
   
-- `Newtonsoft.Json` no permite la serializacion circular, es decir, no se puede serializar "recursivamente". Por ejemplo, si existe un `Hero` que tiene un campo `Skill`, y `Skill` tiene un campo `Hero`, entonces la serializacion se hace circular y se rompe, ademas dado que se necesita trabajar con referencias, aunque no se rompiera, igual no serviria, ya que la biblioteca no guarda referencias, sino datos no relacionales en formato JSON. Para tratar estos problemas se plantean soluciones especificas para el proyecto. 
+- `Newtonsoft.Json` no permite la serializacion circular, es decir, no se puede serializar "recursivamente". Por ejemplo, si existe un `Hero` que tiene un campo `Skill`, y `Skill` tiene un campo `Hero`, entonces la serializacion se hace circular y se rompe, ademas dado que se necesita trabajar con referencias, aunque no se rompiera, igual no serviria, ya que la biblioteca no guarda referencias, sino datos no relacionales en formato JSON. Para tratar estos problemas se plantean soluciones especificas para el proyecto.
 
 `Newtonsoft.Json` es utilizado por razones de flexibilidad de nuestros datos, flexibilidad con la que no cuenta [`JsonUtility`](https://docs.unity3d.com/2020.1/Documentation/Manual/JSONSerialization.html). Dentro de estas se muestran los dos decoradores mas utilizados en nuestro proyecto.
 
@@ -28,7 +28,9 @@ but with other features. Caracteristicas, de las cuales, cada una de las utiliza
 Segun la documentacion y [otros articulos relacionados con esta biblioteca](https://rehtse-studio.medium.com/made-with-unity-newtonsofts-json-net-b64236d59e76), `Newtonsoft.Json` serializa los campos publicos y propiedades que tienen `get` y `set` publicos.
 
 ### Polimorfismo
+
 Otro tema importante en la programacion orientada a objetos es trato con polimorfismo. En nuestro caso esta presente en entidades importantes como los `Effect` y los `Skill`. Para tratar con el polimorfismo a nivel de Json, `Newtonsoft.json` tiene la opcion de `TypeNameHandling`. Para mas detalles de esta opcion, consulte [la documentacion oficial](https://www.newtonsoft.com/json/help/html/serializetypenamehandling.htm).
+
 ```json
 "Weak": {
     "$type": "Weak, Assembly-CSharp",
@@ -37,13 +39,15 @@ Otro tema importante en la programacion orientada a objetos es trato con polimor
             ...
         }
 ```
-    
+
 ### Observaciones
--  Para que `Newtonsoft.json` deserialize correcatamente es necesario que toda clase sobre la cual se quiera deserializar tenga un constructor defaul sin parametros y/o argunementos de entrada.
--  El decorador `[NonSerialized]` al parecer anula los decoradores de `Newtonsoft.json`, por ejemplo si usas `[NonSerialized, JsonRequired]` el serializador no guardara el campo o propiedad marcada con este decorador.
--  Las colas (`Queue`) dan problema en tiempo de deserializacion, no se logra deserializar sobre una cola.
--  Cuando una clase no esta serializando bien a `JSON` colocar el decorador `[JsonObject]` puede solucionar el problema.
--  Las listas desde `Newtonsoft.json` no se agregan directamente con el `value`, al parecer newtonsoft lo que hace es agregar elemento por elemento en una lista y el set no funciona como se espera. Por esta razon se toman medidas para ello en estos casos necesarios. Como ejemplo se puede ver el codigo de [`Deck.Pile`](../../Assets/src/app/Deck/Pile.cs).
+
+- Para que `Newtonsoft.json` deserialize correcatamente es necesario que toda clase sobre la cual se quiera deserializar tenga un constructor defaul sin parametros y/o argunementos de entrada.
+- El decorador `[NonSerialized]` al parecer anula los decoradores de `Newtonsoft.json`, por ejemplo si usas `[NonSerialized, JsonRequired]` el serializador no guardara el campo o propiedad marcada con este decorador.
+- Las colas (`Queue`) dan problema en tiempo de deserializacion, no se logra deserializar sobre una cola.
+- Cuando una clase no esta serializando bien a `JSON` colocar el decorador `[JsonObject]` puede solucionar el problema.
+- Las listas desde `Newtonsoft.json` no se agregan directamente con el `value`, al parecer newtonsoft lo que hace es agregar elemento por elemento en una lista y el set no funciona como se espera. Por esta razon se toman medidas para ello en estos casos necesarios. Como ejemplo se puede ver el codigo de [`Deck.Pile`](../../Assets/src/app/Deck/Pile.cs).
+
     ```C#
     [JsonIgnore]
     public Queue<T> items { get; protected set; }
@@ -71,9 +75,11 @@ Otro tema importante en la programacion orientada a objetos es trato con polimor
     }
     //////////////////////////////////////////////////////////
     ```
--  El decorador `[field: ...]` anula los decoradores de `Newtonsoft.json`, nunca se debe usar un decorador dentro de un grupo que tiene `[field: ...]`.  
+
+- El decorador `[field: ...]` anula los decoradores de `Newtonsoft.json`, nunca se debe usar un decorador dentro de un grupo que tiene `[field: ...]`.  
 
 ### Bibliografia
+
 - [Documentacion Oficial Newtonsoft.json](https://www.newtonsoft.com/json/help/html/Introduction.htm)
 - [Documentacion Oficial Unity](https://docs.unity3d.com/Packages/com.unity.nuget.newtonsoft-json@3.0/manual/index.html)
 - [Serializing and Deserializing JSON (Newtonsoft.json Documentation)](https://www.newtonsoft.com/json/help/html/SerializingJSON.htm)
@@ -81,9 +87,11 @@ Otro tema importante en la programacion orientada a objetos es trato con polimor
 - [Repositorio oficial de Github](https://github.com/JamesNK/Newtonsoft.Json/tree/master).
 
 # Aspectos claves para el guardado
+
 Cada entidad en el juego tiene su estado o no. Es importante tener en cuenta que entidad debe guardar su estado y que entidad puede smplemente guardar una referencia addressable porque solo se necesita el estado base. Cada una de estas seran listadas.
 
 ### Entidades que necesitan guardar su estado
+
 - `Floor`: Los pisos deben guardar su estado y no puede solo guardar un estado base, debe guardarse cada una de las puertas del piso, sus eventos y sus datos de puertas abiertas.
 - `Tower`: La torre debe guardar su estado, dado que la torre contiene a los pisos, ya con esto basta para necesitar guardar el estado de la torre en la data.
 - `Game`: Al igual que ocurre con la torre, el game es la entidad mas grande que se guarda, y posee la mayoria de la informacion que se guarda.
@@ -92,22 +100,27 @@ Cada entidad en el juego tiene su estado o no. Es importante tener en cuenta que
 - `Effect`: Los efectos guardan tambien su estado, lo mas simple seria guardar los stacks.
 
 ### Entidades que no necesitan guardar su estado
+
 Las entidades que no necesitan guardar estados se guardaran en la data como addressables, de esta forma solo se guarda la referencia a la entidad base que, al fin y al cabo, es lo que interesa.
+
 - `FullCards`: Esta lista de cartas solo nos interesa la base de cada una y se guardara entonces su referencia a la base.
 - `UnlockCards`: Al igual que pasa con la lista de todas las cartas, de las cartas desbloquedas solo nos interesa la carta base, por lo que tambien se guardara solo su referencia addressable.
 
 ## Manejo de Assets guardados
+
 Para manejar los assets guardados, lo que se guarda de cada asset es una referencia a un addressable, lo que vendria siendo una `key` del addresabble, por ejemplo `"57099fafd209a2f399de2d7434a50bef"`. Con esta `key` se carga el asset desde los addresables una vez se genere la data desde el `JSON`.
 
 ### Aspectos importantes a tener en cuenta
+
 - Los asset addressables son referencias a assets del proyecto, no son el asset en si, por lo tanto desde este addressable(referencia) se carga y se guarda el asset.
 - Todo asset que deba ser addresable, se debe marcar como addresable desde el editor. ![alt text](image.png)
-- La carga desde un addresable no es instantanea sino asincrona, asi que se debe esperar a que termine la operacion para luego hacer peticiones del result. Por ejemplo se puede hacer `operation.Completed += OnCompleteAssetLoad;`, y escribir la logica deseada detro de la funcion `void OnCompleteAssetLoad(AsyncOperationHandle<Effect> operation)`. Si se intenta obtener el resultado instantaneo funcionara.
-- Cada uno de las entidades que son addresables deben tener asignado el addresable que hace referencia a la misma para poder tener esa informacion. ![alt text](image-1.png) 
+- La carga desde un addresable no es instantanea sino asincrona, asi que se debe esperar a que termine la operacion para luego hacer peticiones del result. Por ejemplo se puede hacer `operation.Completed += OnCompleteAssetLoad;`, y escribir la logica deseada detro de la funcion `void OnCompleteAssetLoad(AsyncOperationHandle<Effect> operation)`. Si se intenta obtener el resultado instantaneo no funcionara.
+- Cada uno de las entidades que son addresables deben tener asignado el addresable que hace referencia a la misma para poder tener esa informacion. ![alt text](image-1.png)
 - Las `skills` de  las cartas no necesitan guardar estado. Si en un futuro deben guardar estados entonces habria que tratar las skills una por una en caso de necesidad de addresables. Para ello se cambia el `[JsonIgnore]` a `[JsonProperty]` y se trata skill por skill.![alt text](image-2.png)
 - Los nombres de los assets son importantes cuando se usa Addressables. Si no te deja usar ciertos caracteres, deben ser cambiados tambie en el nombre del scriptable object. Por ejemplo cuando el nombre de una skill era `AddBurnCard[Fireworm]` daba error por los caracteres `'[]'`. ![alt text](image-3.png)
   
-#### A continuacion se muestra un ejemplo del uso de `AssetReference` combinado con `Newtonsoft.json` para el asset `ScriptableObject Effect`: 
+#### A continuacion se muestra un ejemplo del uso de `AssetReference` combinado con `Newtonsoft.json` para el asset `ScriptableObject Effect`
+
 ```C#
 //EJEMPLO DE CAGA DEL ASSET BASE EN LOS EFECTOS
 [SerializeField, Header("Base Asset Reference"), JsonIgnore]
@@ -137,26 +150,33 @@ void OnCompleteAssetLoad(AsyncOperationHandle<Effect> operation)
     this.icon = baseEffect.icon;
 }
 ```
+
 ### Bibliografia
+
 - [Documentacion Oficial]() (la documentacion oficial de unity esta pobre)
 - [Video de YouTube]() (Este video esta mas completo que mucha de la documentacion oficial de Unity)
+
 ## Solucion a problematicas y Optimizacion
-Para dar solucion a problemas especificos del proyecto se plantean ciertas actualizaciones despues de cargar los datos desde el `JSON`. Algunos de estos objetivos post-load son, por ejemplo, reiniciar los estados de listas de interfaces como `OnTakeDamageList` en las unidades, esto ultimo se logra con reiniciar los efectos de las criaturas. Ademas de mejorar el control de las clases y el trabajo orientado a objetos, tambien se logra una mejor optimizacion evitando guardar datos inncesesarios en el `JSON`. 
+
+Para dar solucion a problemas especificos del proyecto se plantean ciertas actualizaciones despues de cargar los datos desde el `JSON`. Algunos de estos objetivos post-load son, por ejemplo, reiniciar los estados de listas de interfaces como `OnTakeDamageList` en las unidades, esto ultimo se logra con reiniciar los efectos de las criaturas. Ademas de mejorar el control de las clases y el trabajo orientado a objetos, tambien se logra una mejor optimizacion evitando guardar datos inncesesarios en el `JSON`.
 
 Toda clase que necesite actualizarse despues de cargar sus datos (datos que pudieron serializarse a JSON) tendra una funcion o metodo llamado `UpdateAfterLoad()`, esta funcion es la encargada de actualizar todos los datos de la clase que no debieron cargarse o guardarse desde o hacia el `Json`.
 
 Para lograr una organizacion y comprension profunda del codigo del proyecto y las necesidades y dependencias del mismo. Se documenta individualmente cada uno de los `objetos` que necesitan guardar datos persistentes en el disco, y se explica como se dio solucion a cada uno de los problemas que se presentaron.
 
 ## Player
+
 El [Player](../../Assets/src/app/Player/Player.cs) es el objeto o clase que contiene todo lo necesario que se debe guardar en datos persistentes. Desde esta clase se llama entonces la funcion encargada de guardar y la funcion encargada de cargar datos.
 
 ## Unit
 
 ### Detalles de carga post-load
+
 - Las unidades guardan el prefacb asiciado en forma de `string` como un `path`, luego se carga este prefab desde la direccion de `AssetDatabase` despues de cargar los datos desde el JSON.
 - Despues de cargar el JSON, se regeneran todas las skills nuevamente, con ello se logra agregar las skills a sus estados asiciados, como es `OnTakeDamage` u `OnStartCombat`, asi se evita guardar cada una de las listas de skills, solo se guarda en el JSON el listado con todos los skills y luego se cargan y regeneran las listas.
 - Al igual que con las skills, tambien se regeneran los debuffs y los buffs.
-```c# 
+
+```c#
 class Unit
 {
     public void UpdateAfterLoad()
@@ -202,7 +222,6 @@ class Unit
     }
 }
 ```
-
 
 <!-- ### Campos que se marcan como requieridos por el JSON
 Generalmente, los campos que son serializables por el editor son requieridos para guardar en el `JSON` y poder guardar y cargar esta informacion.
