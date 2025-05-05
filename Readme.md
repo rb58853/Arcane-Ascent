@@ -1,6 +1,6 @@
 # Arcane Ascent
 
-![alt text](./Images/Portada.png)
+![alt text](./Doc/Images/Portada.png)
 Arcane Ascent es un juego digital innovador que fusiona un sofisticado sistema de combate basado en cartas con las tradicionales mecánicas del género roguelike. El juego implementa tres especializaciones mágicas distintivas: el Elemental Mage, especializado en el dominio de los elementos naturales; el Summoner Mage, dedicado a la convocación de entidades sobrenaturales; y el Blood Mage, experto en la manipulación de la esencia vital. La estructura técnica del juego se desarrolla sobre Unity con C#, incorporando rigurosamente los principios SOLID y metodologías ágiles de desarrollo. Una característica particularmente notable es su sistema evolutivo de cartas, donde cada especialización cuenta con una biblioteca única y exclusiva de cartas mágicas.
 
 ## Historia
@@ -13,7 +13,7 @@ En el amanecer de la historia, cuando los Vientos de la Magia barrieron el mundo
 
 Permite la construcción de mazos poderosos mediante cientos de combinaciones posibles, optimizando así la estrategia en cada enfrentamiento
 
-![alt text](./Images/collection.jpg)
+![alt text](./Doc/Images/collection.jpg)
 
 ### Exploración Única
 
@@ -24,18 +24,18 @@ Cada ascenso por la torre presenta una experiencia diferenciada gracias a:
 * Variadas combinaciones de cartas
 * Amplia variedad de enemigos y jefes
 
-![alt text](./Images/combat.jpg)
+![alt text](./Doc/Images/combat.jpg)
 
 ### Control Total
 
 Las decisiones tomadas ejercen una influencia directa en el combate y definen el estilo de juego, conduciendo a resultados impredecibles
-![alt text](./Images/claimCard.jpg)
+![alt text](./Doc/Images/claimCard.jpg)
 
 ### Estilos de Combate Diversificados
 
  Cada brujo cuenta con un estilo de combate único y exclusivo, ofreciendo múltiples formas creativas de derrotar a los adversarios
 
-![alt text](./Images/heroSelection.jpg)
+![alt text](./Doc/Images/heroSelection.jpg)
 
 ## Estado Actual y Desarrollo
 
@@ -78,17 +78,26 @@ Las decisiones tomadas ejercen una influencia directa en el combate y definen el
 
 ## Documentacion
 
-La [documentacion](./Wiki.md) esta dada sobre la base del codigo, uso y configuracion del motor grafico. Manejo de elementos, escenas y todo lo que concierne al desarrollo del proyecto para Developers.
+La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y configuracion del motor grafico. Manejo de elementos, escenas y todo lo que concierne al desarrollo del proyecto para Developers.
+
+------
+<div align=center>
+<a href="https://store.steampowered.com/app/3205630/Arcane_Ascent/" target="_blank">
+<img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=steam &color=00adee&logo=Steam&logoColor=FFFFFF&label=" height = 80/>
+</a>
+<a href="" target="_blank">
+<img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=Play Store &color=056559&logo=Steam&logoColor=FFFFFF&label=" height = 80/>
+</a>
 
 ------
 
 <div align=center>
 <a href="" target="_blank">
-<img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For linux &color=FCA121&logo=Linux&logoColor=FFFFFF&label=" />
+<img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For linux &color=E95420&logo=Linux&logoColor=FFFFFF&label=" />
 </a>
 <a href="" target="_blank">
-<img alt="Windows" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For Windows&color=0088CC&logo=windows&logoColor=FFFFFF&label=" />
+<img alt="Windows" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For Windows&color=00B4ED&logo=windows&logoColor=FFFFFF&label=" />
 </a>
 <a href="" target="_blank">
-<img alt="Whatsapp" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For Android &color=25D344&logo=Android&logoColor=FFFFFF&label=" />
+<img alt="Whatsapp" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For Android &color=A4C639&logo=Android&logoColor=FFFFFF&label=" />
 </a>
