@@ -13,7 +13,7 @@ En el amanecer de la historia, cuando los Vientos de la Magia barrieron el mundo
 
 Permite la construcción de mazos poderosos mediante cientos de combinaciones posibles, optimizando así la estrategia en cada enfrentamiento
 
-![alt text](Screenshot_2025-05-04-20-41-46-751_com.WordGames.ARCANE.jpg)
+![alt text](./Images/collection.jpg)
 
 ### Exploración Única
 
@@ -24,18 +24,18 @@ Cada ascenso por la torre presenta una experiencia diferenciada gracias a:
 * Variadas combinaciones de cartas
 * Amplia variedad de enemigos y jefes
 
-![alt text](Screenshot_2025-05-04-20-45-06-216_com.WordGames.ARCANE.jpg)
+![alt text](./Images/combat.jpg)
 
 ### Control Total
 
 Las decisiones tomadas ejercen una influencia directa en el combate y definen el estilo de juego, conduciendo a resultados impredecibles
-![alt text](Screenshot_2025-05-04-20-43-08-179_com.WordGames.ARCANE.jpg)
+![alt text](./Images/claimCard.jpg)
 
 ### Estilos de Combate Diversificados
 
  Cada brujo cuenta con un estilo de combate único y exclusivo, ofreciendo múltiples formas creativas de derrotar a los adversarios
 
-![alt text](Screenshot_2025-05-04-20-42-03-262_com.WordGames.ARCANE.jpg)
+![alt text](./Images/heroSelection.jpg)
 
 ## Estado Actual y Desarrollo
 
