@@ -83,21 +83,24 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 ------
 <div align=center>
 <a href="https://store.steampowered.com/app/3205630/Arcane_Ascent/" target="_blank">
-<img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=steam &color=00adee&logo=Steam&logoColor=FFFFFF&label=" height = 80/>
+<img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=steam &color=00adee&logo=Steam&logoColor=FFFFFF&label=" height = 80/>
 </a>
 <a href="" target="_blank">
-<img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=Play Store &color=056559&logo=android&logoColor=FFFFFF&label=" height = 80/>
+<img alt="Play Store" src="https://img.shields.io/static/v1?style=for-the-badge&message=Play Store &color=056559&logo=android&logoColor=FFFFFF&label=" height = 80/>
 </a>
 
 ------
 
 <div align=center>
 <a href="" target="_blank">
-<img alt="discord" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For linux &color=E95420&logo=Linux&logoColor=FFFFFF&label=" />
+<img alt="LinuxDemo" src="https://img.shields.io/static/v1?style=for-the-badge&message=demo &color=555555&logo=Linux&logoColor=FFFFFF&label=Linux&labelColor=E95420" />
 </a>
 <a href="" target="_blank">
-<img alt="Windows" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For Windows&color=00B4ED&logo=Microsoft&logoColor=FFFFFF&label=" />
+<img alt="WindowsDemo" src="https://img.shields.io/static/v1?style=for-the-badge&
+message=demo &color=555555&logo=windows&logoColor=FFFFFF&label=Windows&labelColor=00B4ED" />
 </a>
 <a href="" target="_blank">
-<img alt="Whatsapp" src="https://img.shields.io/static/v1?style=for-the-badge&message=Download Demo For Android &color=A4C639&logo=Android&logoColor=FFFFFF&label=" />
+<img alt="AndroidDemo" src="https://img.shields.io/static/v1?style=for-the-badge&
+message=demo &color=555555&logo=android&logoColor=FFFFFF&label=Android&labelColor=A4C639&" />
 </a>
+</div>
