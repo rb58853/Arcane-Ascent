@@ -96,11 +96,9 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 <img alt="LinuxDemo" src="https://img.shields.io/static/v1?style=for-the-badge&message=demo&color=555555&logo=Linux&logoColor=FFFFFF&label=Linux&labelColor=E95420" />
 </a>
 <a href="" target="_blank">
-<img alt="WindowsDemo" src="https://img.shields.io/static/v1?style=for-the-badge&
-message=demo&color=555555&logo=windows&logoColor=FFFFFF&label=Windows&labelColor=00B4ED" />
+<img alt="WindowsDemo" src="https://img.shields.io/static/v1?style=for-the-badge&message=demo&color=555555&logo=windows&logoColor=FFFFFF&label=Windows&labelColor=00B4ED" />
 </a>
 <a href="" target="_blank">
-<img alt="AndroidDemo" src="https://img.shields.io/static/v1?style=for-the-badge&
-message=demo&color=555555&logo=android&logoColor=FFFFFF&label=Android&labelColor=A4C639&" />
+<img alt="AndroidDemo" src="https://img.shields.io/static/v1?style=for-the-badge&message=demo&color=555555&logo=android&logoColor=FFFFFF&label=Android&labelColor=A4C639&" />
 </a>
 </div>
