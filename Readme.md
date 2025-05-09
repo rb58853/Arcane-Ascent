@@ -86,7 +86,7 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 <img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=steam&color=00adee&logo=Steam&logoColor=FFFFFF&label=" height = 80/>
 </a>
 <a href="" target="_blank">
-<img alt="Play Store" src="https://img.shields.io/static/v1?style=for-the-badge&message=Play Store&color=056559&logo=android&logoColor=FFFFFF&label=" height = 80/>
+<img alt="Play Store" src="https://img.shields.io/static/v1?style=for-the-badge&message=PlayStore&color=056559&logo=android&logoColor=FFFFFF&label=" height = 80/>
 </a>
 
 <!-- ------ -->
