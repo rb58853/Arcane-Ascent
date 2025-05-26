@@ -83,15 +83,18 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 ------
 <div align=center>
 <a href="https://store.steampowered.com/app/3205630/Arcane_Ascent/" target="_blank">
-<img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=steam&color=00adee&logo=Steam&logoColor=FFFFFF&label=" height = 80/>
+<img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=steam&color=00adee&logo=Steam&logoColor=FFFFFF&label=" height = 40/>
 </a>
 <a href="" target="_blank">
-<img alt="Play Store" src="https://img.shields.io/static/v1?style=for-the-badge&message=PlayStore&color=056559&logo=android&logoColor=FFFFFF&label=" height = 80/>
+<img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=developer&color=24292e&logo=github&logoColor=FFFFFF&label=" height = 40/>
 </a>
+<!-- <a href="" target="_blank">
+<img alt="Play Store" src="https://img.shields.io/static/v1?style=for-the-badge&message=PlayStore&color=056559&logo=android&logoColor=FFFFFF&label=" height = 80/>
+</a> -->
 
 <!-- ------ -->
 
-<div align=center>
+<!-- <div align=center>
 <a href="" target="_blank">
 <img alt="LinuxDemo" src="https://img.shields.io/static/v1?style=for-the-badge&message=demo&color=555555&logo=Linux&logoColor=FFFFFF&label=Linux&labelColor=E95420" />
 </a>
@@ -101,4 +104,4 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 <a href="" target="_blank">
 <img alt="AndroidDemo" src="https://img.shields.io/static/v1?style=for-the-badge&message=demo&color=555555&logo=android&logoColor=FFFFFF&label=Android&labelColor=A4C639&" />
 </a>
-</div>
+</div> -->
