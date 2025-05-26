@@ -1,78 +1,78 @@
 # Arcane Ascent
 
 ![alt text](./Doc/Images/Portada.png)
-Arcane Ascent es un juego digital innovador que fusiona un sofisticado sistema de combate basado en cartas con las tradicionales mecánicas del género roguelike. El juego implementa tres especializaciones mágicas distintivas: el Elemental Mage, especializado en el dominio de los elementos naturales; el Summoner Mage, dedicado a la convocación de entidades sobrenaturales; y el Blood Mage, experto en la manipulación de la esencia vital. La estructura técnica del juego se desarrolla sobre Unity con C#, incorporando rigurosamente los principios SOLID y metodologías ágiles de desarrollo. Una característica particularmente notable es su sistema evolutivo de cartas, donde cada especialización cuenta con una biblioteca única y exclusiva de cartas mágicas.
+Arcane Ascent is an innovative digital game that fuses a sophisticated card-based combat system with the traditional mechanics of the roguelike genre. The game implements three distinctive magical specializations: the Elemental Mage, specialized in the mastery of natural elements; the Summoner Mage, dedicated to the summoning of supernatural entities; and the Blood Mage, skilled in the manipulation of life essence. The technical structure of the game is developed on Unity with C#, rigorously incorporating SOLID principles and agile development methodologies. A particularly notable feature is its evolutionary card system, where each specialization has a unique and exclusive library of magic cards.
 
-## Historia
+## History
 
-En el amanecer de la historia, cuando los Vientos de la Magia barrieron el mundo, surgió un inmenso poder en defensa contra la ambición de una singular Reina Bruja en su imponente Torre. Esta intentó dominar la esencia misma de la magia, pero la magia, caprichosa y salvaje, resistió su control, desencadenando un cataclismo masivo que atrapó a ella y a todo su séquito durante mil años. Este cataclismo mágico no solo sacudió los fundamentos del mundo sino que también despertó a los dioses y a los elementos mismos, corrompiendo con su influencia corruptora a todas las personas de la Torre. En la actualidad, después de mil años de cautiverio, la puerta de la torre ha sido finalmente abierta, atrayendo a cientos de brujos de todos los rincones del mundo que ansían el poder que yace al final de esta Torre.
+At the dawn of history, when the Winds of Magic swept the world, immense power arose in defense against the ambition of a singular Witch Queen in her towering Tower. She attempted to master the very essence of magic, but magic, capricious and wild, resisted her control, unleashing a massive cataclysm that trapped her and her entire entourage for a thousand years. This magical cataclysm not only shook the foundations of the world but also awakened the gods and the elements themselves, corrupting all the people of the Tower with its corrupting influence. Today, after a thousand years of captivity, the Tower's door has finally been opened, attracting hundreds of sorcerers from all corners of the world who crave the power that lies at the bottom of this Tower.
 
-## Características Principales
+## Main Features
 
-### Sistema de Mazo Estratégico
+### Strategic Deck System
 
-Permite la construcción de mazos poderosos mediante cientos de combinaciones posibles, optimizando así la estrategia en cada enfrentamiento
+Allows the construction of powerful decks through hundreds of possible combinations, thus optimizing the strategy in each confrontation.
 
 ![alt text](./Doc/Images/collection.jpg)
 
-### Exploración Única
+### Unique Exploration
 
-Cada ascenso por la torre presenta una experiencia diferenciada gracias a:
+Each ascent through the tower presents a differentiated experience thanks to:
 
-* Encuentros generados proceduralmente
-* Eventos aleatorios
-* Variadas combinaciones de cartas
-* Amplia variedad de enemigos y jefes
+* Procedurally generated encounters
+* Random events
+* Varied card combinations
+* Wide variety of enemies and bosses
 
 ![alt text](./Doc/Images/combat.jpg)
 
-### Control Total
+### Total Control
 
-Las decisiones tomadas ejercen una influencia directa en el combate y definen el estilo de juego, conduciendo a resultados impredecibles
+Decisions made have a direct influence on combat and define the style of play, leading to unpredictable results.
 ![alt text](./Doc/Images/claimCard.jpg)
 
-### Estilos de Combate Diversificados
+### Diversified Combat Styles
 
- Cada brujo cuenta con un estilo de combate único y exclusivo, ofreciendo múltiples formas creativas de derrotar a los adversarios
+ Each warlock has a unique and exclusive combat style, offering multiple creative ways to defeat opponents.
 
 ![alt text](./Doc/Images/heroSelection.jpg)
 
-## Estado Actual y Desarrollo
+## Current Status and Development
 
-* Disponible en Early Access.
-* Se mantiene activa la participación de la comunidad de desarrolladores.
-* Se implementa continuamente la retroalimentación para mejorar y expandir el juego.
+* Available in Early Access.
+* Active participation of the developer community is maintained.
+* Continuously implementing feedback to improve and expand the game.
 
 ## Idiomas Soportados
 
-| Idioma        | Interfaz | Audio | Subtítulos |
+| Language | Interface | Audio | Subtitles |
 |---------------|----------|-------|------------|
-| Español       | ✓        | ✗     | ✓          |
-| Francés       | ✓        | ✗     | ✓          |
-| Alemán        | ✓        | ✗     | ✓          |
-| Italiano      | ✓        | ✗     | ✓          |
-| Portugués     | ✓        | ✗     | ✓          |
-| Chino Simplificado| ✓    | ✗     | ✓          |
-| Chino Tradicional| ✓    | ✗     | ✓          |
-| Coreano       | ✓        | ✗     | ✓          |
-| Japonés       | ✓        | ✗     | ✓          |
-| Ruso          | ✓        | ✗     | ✓          |
-| Inglés        | ✓        | ✗     | ✓          |
+| Spanish | ✓ | ✗ | ✓ | ✗ | ✓ |
+| French | ✓ | ✓ | ✗ | ✓ | ✓ |
+| German ✓ | ✓ | ✗ | ✓ | ✓ | ✓ |
+| Italian ✓ | ✓ | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Portuguese | ✓ | ✓ | ✗ | ✓ | ✓ | ✓ |
+| Simplified Chinese| ✓ | ✗ | ✓ | ✓ | ✓ |
+| Traditional Chinese| ✓ | ✗ | ✓ | ✗ | ✓ | ✓ |
+| Korean | ✓ | ✗ | ✓ | ✓ | ✓ |
+| Japanese ✓ | ✓ | ✗ | ✓ | ✓ |
+| Russian ✓ | ✓ | ✗ | ✓ | ✓ |
+| English | ✓ | ✓ | ✗ | ✓ | ✓ |
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-* **Unity**: Motor gráfico seleccionado para la generación del juego
-* **C#**: Lenguaje de programación utilizado para el desarrollo del código del proyecto
-* **Python**: Implementado en paralelo para la generación de idiomas durante el tiempo de indexación
-* **OpenAI**: Biblioteca de Python utilizada para la automatización de la generación de idiomas mediante modelos NLP
-* **Steamworks**: Manejo de la biblioteca de steam para desarrollar el sistema de logros.
+* **Unity**: Graphics engine selected for the generation of the game.
+* **C#**: Programming language used for the development of the project's code.
+* **Python**: Implemented in parallel for language generation during the indexing time
+* **OpenAI**: Python library used for the automation of language generation using NLP models
+* **Steamworks**: Steam library management to develop the achievement system.
 
-## Información Comercial
+## Commercial Information
 
-* El precio establecido es de $14.99 USD
-* La plataforma de distribución es PC (Steam)
-* Las características disponibles en Steam incluyen:
-  * Logros de Steam
+* The established price is $14.99 USD
+* The distribution platform is PC (Steam)
+* Features available on Steam include:
+  * Steam Achievements
   * Modo un jugador
   * Compartir Familia
 
@@ -82,26 +82,10 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 
 ------
 <div align=center>
-<a href="https://store.steampowered.com/app/3205630/Arcane_Ascent/" target="_blank">
-<img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=steam&color=00adee&logo=Steam&logoColor=FFFFFF&label=" height = 40/>
+<a href=https://store.steampowered.com/app/3205630/Arcane_Ascent/ target=_blank>
+<img alt=Steam src=https://img.shields.io/static/v1?style=for-the-badge&message=steam&color=00adee&logo=Steam&logoColor=FFFFFF&label&height=40/>
 </a>
-<a href="" target="_blank">
-<img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=developer&color=24292e&logo=github&logoColor=FFFFFF&label=" height = 40/>
+<a href= target=_blank>
+<img alt=Steam src=https://img.shields.io/static/v1?style=for-the-badge&message=developer&color=24292e&logo=github&logoColor=FFFFFF&label= height = 40/>
 </a>
-<!-- <a href="" target="_blank">
-<img alt="Play Store" src="https://img.shields.io/static/v1?style=for-the-badge&message=PlayStore&color=056559&logo=android&logoColor=FFFFFF&label=" height = 80/>
-</a> -->
-
-<!-- ------ -->
-
-<!-- <div align=center>
-<a href="" target="_blank">
-<img alt="LinuxDemo" src="https://img.shields.io/static/v1?style=for-the-badge&message=demo&color=555555&logo=Linux&logoColor=FFFFFF&label=Linux&labelColor=E95420" />
-</a>
-<a href="" target="_blank">
-<img alt="WindowsDemo" src="https://img.shields.io/static/v1?style=for-the-badge&message=demo&color=555555&logo=windows&logoColor=FFFFFF&label=Windows&labelColor=00B4ED" />
-</a>
-<a href="" target="_blank">
-<img alt="AndroidDemo" src="https://img.shields.io/static/v1?style=for-the-badge&message=demo&color=555555&logo=android&logoColor=FFFFFF&label=Android&labelColor=A4C639&" />
-</a>
-</div> -->
+</div>
