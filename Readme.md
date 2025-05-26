@@ -82,10 +82,10 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 
 ------
 <div align=center>
-<a href=https://store.steampowered.com/app/3205630/Arcane_Ascent/ target=_blank>
-<img alt=Steam src=https://img.shields.io/static/v1?style=for-the-badge&message=steam&color=00adee&logo=Steam&logoColor=FFFFFF&label&height=40/>
+<a href="https://store.steampowered.com/app/3205630/Arcane_Ascent/" target="_blank">
+<img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=steam&color=00adee&logo=Steam&logoColor=FFFFFF&label=" height = 40/>
 </a>
-<a href= target=_blank>
-<img alt=Steam src=https://img.shields.io/static/v1?style=for-the-badge&message=developer&color=24292e&logo=github&logoColor=FFFFFF&label= height = 40/>
+<a href="https://github.com/rb58853" target="_blank">
+<img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=developer&color=24292e&logo=github&logoColor=FFFFFF&label=" height = 40/>
 </a>
 </div>
