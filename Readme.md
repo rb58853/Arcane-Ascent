@@ -57,7 +57,7 @@ Decisions made have a direct influence on combat and define the style of play, l
 | Traditional Chinese| ✓ | ✗ | ✓ |
 | Korean | ✓ | ✗ | ✓ |
 | Japanese | ✓ | ✗ | ✓ |
-| Russian ✓ | ✗ | ✓ |
+| Russian | ✓ | ✗ | ✓ |
 | English | ✓ | ✓ | ✓ |
 
 ## Technologies Used
