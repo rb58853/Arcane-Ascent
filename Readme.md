@@ -6,7 +6,7 @@ Arcane Ascent is an innovative digital game that fuses a sophisticated card-base
 ## History
 
 At the dawn of history, when the Winds of Magic swept the world, immense power arose in defense against the ambition of a singular Witch Queen in her towering Tower. She attempted to master the very essence of magic, but magic, capricious and wild, resisted her control, unleashing a massive cataclysm that trapped her and her entire entourage for a thousand years. This magical cataclysm not only shook the foundations of the world but also awakened the gods and the elements themselves, corrupting all the people of the Tower with its corrupting influence. Today, after a thousand years of captivity, the Tower's door has finally been opened, attracting hundreds of sorcerers from all corners of the world who crave the power that lies at the bottom of this Tower.
-<!-- ![alt text](./Doc/Images/Trailer.gif) -->
+![alt text](./Doc/Images/Trailer.gif)
 
 ## Main Features
 
@@ -44,7 +44,7 @@ Decisions made have a direct influence on combat and define the style of play, l
 * Active participation of the developer community is maintained.
 * Continuously implementing feedback to improve and expand the game.
 
-## Idiomas Soportados
+## Languages Supported
 
 | Language | Interface | Audio | Subtitles |
 |---------------|----------|-------|------------|
@@ -77,9 +77,9 @@ Decisions made have a direct influence on combat and define the style of play, l
   * Modo un jugador
   * Compartir Familia
 
-## Documentacion
+## Documentation
 
-La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y configuracion del motor grafico. Manejo de elementos, escenas y todo lo que concierne al desarrollo del proyecto para Developers.
+The [documentation](./Doc/Wiki.md) is given on the basis of the code, use and configuration of the graphics engine. Handling of elements, scenes and everything concerning the development of the project for Developers.
 
 ------
 <div align=center>
@@ -88,5 +88,8 @@ La [documentacion](./Doc/Wiki.md) esta dada sobre la base del codigo, uso y conf
 </a>
 <a href="https://github.com/rb58853" target="_blank">
 <img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=developer&color=24292e&logo=github&logoColor=FFFFFF&label=" height = 40/>
+</a>
+<a href="./Doc/Images/Trailer.mp4" target="_blank">
+<img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=Trailer&color=991234&logo=V&logoColor=FFFFFF&label=" height = 40/>
 </a>
 </div>
