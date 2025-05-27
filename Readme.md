@@ -48,17 +48,17 @@ Decisions made have a direct influence on combat and define the style of play, l
 
 | Language | Interface | Audio | Subtitles |
 |---------------|----------|-------|------------|
-| Spanish | ✓ | ✗ | ✓ | ✗ | ✓ |
-| French | ✓ | ✓ | ✗ | ✓ | ✓ |
-| German ✓ | ✓ | ✗ | ✓ | ✓ | ✓ |
-| Italian ✓ | ✓ | ✗ | ✓ | ✓ | ✓ | ✓ |
-| Portuguese | ✓ | ✓ | ✗ | ✓ | ✓ | ✓ |
-| Simplified Chinese| ✓ | ✗ | ✓ | ✓ | ✓ |
-| Traditional Chinese| ✓ | ✗ | ✓ | ✗ | ✓ | ✓ |
-| Korean | ✓ | ✗ | ✓ | ✓ | ✓ |
-| Japanese ✓ | ✓ | ✗ | ✓ | ✓ |
-| Russian ✓ | ✓ | ✗ | ✓ | ✓ |
-| English | ✓ | ✓ | ✗ | ✓ | ✓ |
+| Spanish | ✓ | ✗ | ✓ |
+| French | ✓ | ✗ | ✓ |
+| German | ✓ | ✗ | ✓ |
+| Italian | ✓ | ✗ | ✓ | 
+| Portuguese | ✓ | ✗ | ✓ |
+| Simplified Chinese| ✓ | ✗ | ✓ |
+| Traditional Chinese| ✓ | ✗ | ✓ |
+| Korean | ✓ | ✗ | ✓ |
+| Japanese | ✓ | ✗ | ✓ |
+| Russian ✓ | ✗ | ✓ |
+| English | ✓ | ✓ | ✓ |
 
 ## Technologies Used
 
@@ -89,7 +89,7 @@ The [documentation](./Doc/Wiki.md) is given on the basis of the code, use and co
 <a href="https://github.com/rb58853" target="_blank">
 <img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=developer&color=24292e&logo=github&logoColor=FFFFFF&label=" height = 40/>
 </a>
-<a href="./Doc/Images/Trailer.mp4" target="_blank">
+<a href="https://github.com/rb58853/Arcane-Ascent/raw/refs/heads/main/Doc/Images/Trailer.mp4" target="_blank">
 <img alt="Steam" src="https://img.shields.io/static/v1?style=for-the-badge&message=Trailer&color=991234&logo=V&logoColor=FFFFFF&label=" height = 40/>
 </a>
 </div>
