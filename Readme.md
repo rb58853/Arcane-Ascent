@@ -6,7 +6,10 @@ Arcane Ascent is an innovative digital game that fuses a sophisticated card-base
 ## History
 
 At the dawn of history, when the Winds of Magic swept the world, immense power arose in defense against the ambition of a singular Witch Queen in her towering Tower. She attempted to master the very essence of magic, but magic, capricious and wild, resisted her control, unleashing a massive cataclysm that trapped her and her entire entourage for a thousand years. This magical cataclysm not only shook the foundations of the world but also awakened the gods and the elements themselves, corrupting all the people of the Tower with its corrupting influence. Today, after a thousand years of captivity, the Tower's door has finally been opened, attracting hundreds of sorcerers from all corners of the world who crave the power that lies at the bottom of this Tower.
-![alt text](./Doc/Images/Trailer.gif)
+
+https://github.com/user-attachments/assets/b1114969-8963-4fdf-9dc7-75ac6fbed9fe
+
+<--![alt text](./Doc/Images/Trailer.gif)-->
 
 ## Main Features
 
