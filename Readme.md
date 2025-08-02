@@ -9,8 +9,6 @@ At the dawn of history, when the Winds of Magic swept the world, immense power a
 
 https://github.com/user-attachments/assets/b1114969-8963-4fdf-9dc7-75ac6fbed9fe
 
-<--![alt text](./Doc/Images/Trailer.gif)-->
-
 ## Main Features
 
 ### Strategic Deck System
